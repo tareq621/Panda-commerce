@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="images/logo.png" alt="">
@@ -28,13 +28,13 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Shoes</a>
+                            <a class="nav-link" href="#Shoes">Shoes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Backpack</a>
+                            <a class="nav-link" href="#Backpack">Backpack</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Subscribe</a>
+                            <a class="nav-link" href="#Subscribe">Subscribe</a>
                         </li>
                     </ul>
 
@@ -135,10 +135,10 @@
             </div>
         </section>
         <!---------------
-         Products start
+         Shoes start
         ---------------->
         <section class="container">
-            <h4>Shoes</h4>
+            <h4 id="Shoes">Shoes</h4>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
                     <div class="card h-100 border-0 shadow-lg">
@@ -192,8 +192,8 @@
         <!-- -------------
             bagpack start 
         --------------- -->
-        <section class="container mt-4">
-            <h4>Bagpack</h4>
+        <section class="container my-5">
+            <h4 id="Backpack">Bagpack</h4>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
                     <div class="card h-100 border-0 shadow-lg">
@@ -246,9 +246,21 @@
                 </div>
             </div>
         </section>
+        <!-------------
+         Subscribe
+        ----------- -->
+        <section class="container rounded-3 d-flex justify-content-center" style="background-color: #FCEAE8;">
+            <div class="my-5">
+                <h1 id="Subscribe">LET'S STAY IN TOUCH</h1>
+                <p class="text-black-50">Get updates on sales, specials and more</p>
+                <input class="border rounded py-2 pe-5" type="text" placeholder="Your Email">
+                <br>
+                <button class="btn btn-warning mt-2">Submit</button>
+            </div>
+        </section>
     </main>
-    <footer>
-
+    <footer class="mt-5">
+        <p class="text-center"><small>©2020. Panda Commerce. All rights reserved. Sofia, Bulgaria.</small></p>
     </footer>
     <!-- Bootstrap script  -->
     <script src="js/bootstrap.bundle.min.js"></script>
